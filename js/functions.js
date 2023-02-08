@@ -1,6 +1,13 @@
+window.addEventListener("load", function () {
+  document.getElementById("loader").style.display = "none"; // remove loader div
+  //document.getElementById("header").style.display = "initial"; // add in header
+  //document.getElementById("content").style.display = "initial"; // add in content div
+  //window.scrollTo
+});
+
 function calcAge(dateString) {
-    var birthday = +new Date(dateString);
-    return ~~((Date.now() - birthday) / (31557600000)); // number is the number of seconds in the required years
+  var birthday = +new Date(dateString);
+  return ~~((Date.now() - birthday) / (31557600000)); // number is the number of seconds in the required years
 }
 
 

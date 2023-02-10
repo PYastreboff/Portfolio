@@ -2,7 +2,7 @@ window.addEventListener("load", function () {
   document.getElementById("loader").style.display = "none"; // remove loader div
   //document.getElementById("header").style.display = "initial"; // add in header
   //document.getElementById("content").style.display = "initial"; // add in content div
-  //window.scrollTo
+  window.scrollHeight = -10;
 });
 
 function calcAge(dateString) {

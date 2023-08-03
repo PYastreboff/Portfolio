@@ -84,7 +84,7 @@ function slowScrollToElement(elementId, duration) {
         const easeOutCubic = progress => 1 - (1 - progress) ** 3;
         //const easeInCubic = progress => 4 * progress ** 3;
 
-    
+            
         window.scrollTo(0, startingY + distance * easeOutCubic(progress / duration));
     
         if (progress < duration) {

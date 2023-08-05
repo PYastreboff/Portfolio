@@ -144,7 +144,7 @@ body::-webkit-scrollbar {
     margin: 1rem;
 }
 
-.scroll-down:hover {
+.scroll-down-container:hover {
     cursor: pointer;
 }
   

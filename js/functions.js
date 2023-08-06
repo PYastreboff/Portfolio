@@ -80,12 +80,12 @@ function slowScrollToElement(elementId, duration) {
     function step(currentTime) {
         if (!startTime) startTime = currentTime;
         const progress = currentTime - startTime;
-        //const easeInOutCubic = progress => progress < 0.5 ? 4 * progress ** 3 : 1 - (-2 * progress + 2) ** 3 / 2; // Easing function
-        const easeOutCubic = progress => 1 - (1 - progress) ** 3;
+        const easeInOutCubic = progress => progress < 0.5 ? 4 * progress ** 3 : 1 - (-2 * progress + 2) ** 3 / 2; // Easing function
+        //const easeOutCubic = progress => 1 - (1 - progress) ** 3;
         //const easeInCubic = progress => 4 * progress ** 3;
 
             
-        window.scrollTo(0, startingY + distance * easeOutCubic(progress / duration));
+        window.scrollTo(0, startingY + distance * easeInOutCubic(progress / duration));
     
         if (progress < duration) {
             requestAnimationFrame(step);

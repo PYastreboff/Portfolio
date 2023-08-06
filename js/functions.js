@@ -80,7 +80,7 @@ function slowScrollToElement(elementId, duration) {
     function step(currentTime) {
         if (!startTime) startTime = currentTime;
         const progress = currentTime - startTime;
-        const easeInOutCubic = progress => progress < 0.5 ? 4 * progress ** 3 : 1 - (-2 * progress + 2) ** 3 / 2; // Easing function
+        const easeInOutCubic = progress => progress < 0.5 ? 4 * progress ** 3 : 1 - (-2 * progress + 2) ** 2 / 2; // Easing function
         //const easeOutCubic = progress => 1 - (1 - progress) ** 3;
         //const easeInCubic = progress => 4 * progress ** 3;
 
@@ -96,5 +96,5 @@ function slowScrollToElement(elementId, duration) {
 }
 
 function introScroll() {
-    slowScrollToElement('intro_section', 4000);
+    slowScrollToElement('intro_section', 5500);
 }

@@ -226,8 +226,14 @@ body::-webkit-scrollbar {
 }
 
 .info-bar {
+    position: relative;
     margin-top: 1rem;
     padding: 2rem 3rem;
+}
+
+.bottom-bar {
+    position: relative;
+    z-index: 200;
 }
 
 .b {
@@ -861,7 +867,7 @@ header #headerHelp {
 
 }
   
-@media screen and (min-width: 400px ?? max-width: 660px) {
+@media screen and (max-width: 660px) {
     .direction-l .tmdesc, .direction-r .tmdesc {
         margin: 1em 4em 0 4em;
     }
@@ -961,4 +967,12 @@ header #headerHelp {
 .grey {
     font-size: 2rem;
     color: #666;
+}
+
+@media screen and (max-width: 660px) {
+    ul.experiences-div {
+        width: 100vw;
+        align-self: center;
+        justify-self: center;
+    }
 }

@@ -18,9 +18,10 @@ body {
   justify-content: center;
   align-items: center;
 
-  z-index: 20;
+  z-index: 1000;
 
   transition: all 1s;
+  overflow: hidden;
 }
 
 #loading-wrapper {

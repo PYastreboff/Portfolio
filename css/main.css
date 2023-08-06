@@ -923,7 +923,7 @@ header #headerHelp {
 .experiences-div>li:hover {
 	background-color: #cde1ff;
 	box-shadow: 0 0 0 .5rem #fefefe;
-    cursor: pointer;
+    /* cursor: pointer; */
     transform: scale(1.05); /* Scale up to 120% of the original size */
 }
 

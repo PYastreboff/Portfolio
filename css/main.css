@@ -652,7 +652,7 @@ header #headerHelp {
 .flag-wrapper {
     position: relative;
     display: inline-block;
-
+    overflow-y: hidden;
     text-align: center;
 }
 

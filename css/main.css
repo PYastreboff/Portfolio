@@ -990,6 +990,7 @@ header #headerHelp {
     background-color: #333;
     position: relative;
     z-index: 0;
+    align-items: center;
 }
 
 #port-text {
@@ -999,6 +1000,8 @@ header #headerHelp {
     margin-top: 7rem;
     font-size: 2.2rem;
     z-index: 99;
+    justify-content: center;
+    white-space: nowrap;
 }
 
 #portfolio-box {
@@ -1157,7 +1160,7 @@ header #headerHelp {
     color: white;
     font-size: 3rem;
     opacity: 100%;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     z-index: 99;
     opacity: 0%;
 }
@@ -1174,6 +1177,14 @@ header #headerHelp {
 
 .red {
     color: rgb(255, 70, 70);
+    position: relative;
+    z-index: 0;
 } .blue {
     color: rgb(102, 102, 255);
+    position: relative;
+    z-index: 0;
+}
+
+.responsive-newline {
+    content: "";
 }

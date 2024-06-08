@@ -195,5 +195,48 @@
     #helpModal .modalTop {
         height: 120px;
     }
-    
+
+    #port-text {
+        width: 10000vw;
+        margin-top: 1rem;
+        height: fit-content;
+        justify-self: center;
+        margin-bottom: 1rem;
+        white-space: wrap;
+    }
+
+    .infotop p {
+       max-width: 45vw;
+    }
+
+    #graphic-card p, #graphic-card i {
+        margin-left: auto;
+        margin-right: 1rem;
+        text-align: right;
+    } #graphic-card i {
+        width: 100%;
+        margin-left: -1rem;
+    }
+    #coding-card p, #coding-card i {
+        margin-right: auto;
+        margin-left: 1rem;
+        text-align: left;
+    } #coding-card i {
+        width: 100%;
+        margin-left: 1rem;
+    }
+
+    #graphic-card .card-port-name, #graphics-card p {
+        text-align: right;
+        margin-right: 1rem;
+        align-self: right;
+    }
+    #coding-card .card-port-name, #coding-card p {
+        text-align: left;
+        margin-left: 1rem;
+        align-self: left;
+    }
+    .responsive-newline {
+        display: block;
+    }
 }

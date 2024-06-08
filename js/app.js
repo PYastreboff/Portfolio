@@ -4,9 +4,19 @@ const info = document.getElementById("info-text");
 const infoContainer = document.getElementById("info-screen");
 const scrollDown = document.getElementById("sd");
 const helpButton = document.getElementById("headerHelp");
+const infoBar = document.getElementById("info-bar");
+const question = document.getElementById("port-text");
+const introSection = document.getElementById("intro_section");
+const timeline = document.getElementById("timeline");
+
+const GCard = document.getElementById("graphic-card");
+const CCard = document.getElementById("code-card");
 
 const TCHeight = titleContainer.offsetHeight;
 const IHeight = infoContainer.offsetHeight;
+const ISHeight = introSection.offsetHeight;
+const THeight = timeline.offsetHeight;
+const IBHeight = infoBar.offsetHeight;
 
 
 window.onload = function () { 
@@ -61,6 +71,31 @@ document.addEventListener('scroll', (e) => { // on scroll
         }
         info.style.letterSpacing = ls+"px";
 
+        if (scrollY > (TCHeight+IHeight+ISHeight)) {
+            info.style.opacity = "0%";
+        }
+
+
+        if (scrollY < (TCHeight+IHeight+ISHeight+THeight-100)) {
+            question.style.opacity = "0%";
+            GCard.style.marginRight = "100vw";
+            CCard.style.marginLeft = "100vw";
+        }
+        if (scrollY > (TCHeight+IHeight+ISHeight+THeight)) {
+
+            const total = (TCHeight+IHeight+ISHeight+THeight);
+            const portPercent = (((scrollY - total) / (window.innerHeight*2)) * 100) - 50;
+            question.style.opacity = (portPercent+10).toString()+"%";
+            var qs = 80 - portPercent*1.5;
+            if (qs < 3) {
+                qs = 3;
+            }
+            question.style.letterSpacing = qs+"px";
+            GCard.style.marginRight = qs+"vw";
+            CCard.style.marginLeft = qs+"vw";
+            console.log(portPercent);
+        }
+
 
         /* // To add Sticky Text
         if (scrollY > 2620) {
@@ -69,9 +104,7 @@ document.addEventListener('scroll', (e) => { // on scroll
             info.style.top = "50%";
         }
         */
-    } else {
-        
-    }
+    } else {}
 });
 
 

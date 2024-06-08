@@ -71,7 +71,7 @@ document.addEventListener('scroll', (e) => { // on scroll
         }
         info.style.letterSpacing = ls+"px";
 
-        if (scrollY > (TCHeight+IHeight+ISHeight)) {
+        if (scrollY > (TCHeight+IHeight+ISHeight+THeight)) {
             info.style.opacity = "0%";
         }
 

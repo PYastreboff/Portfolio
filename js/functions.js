@@ -83,8 +83,6 @@ function slowScrollToElement(elementId, duration) {
         const easeInOutCubic = progress => progress < 0.5 ? 4 * progress ** 3 : 1 - (-2 * progress + 2) ** 2 / 2; // Easing function
         //const easeOutCubic = progress => 1 - (1 - progress) ** 3;
         //const easeInCubic = progress => 4 * progress ** 3;
-
-            
         window.scrollTo(0, startingY + distance * easeInOutCubic(progress / duration));
     
         if (progress < duration) {
@@ -95,6 +93,34 @@ function slowScrollToElement(elementId, duration) {
     requestAnimationFrame(step);
 }
 
+function slowScrollToBeforeElement(elementId, duration, ) {
+  const targetElement = document.getElementById(elementId);
+  const offset = window.innerHeight + 1; // Adjust this value as needed
+
+  const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+  const startingY = window.pageYOffset;
+  const distance = targetPosition - startingY;
+  let startTime = null;
+
+  function step(currentTime) {
+      if (!startTime) startTime = currentTime;
+      const progress = currentTime - startTime;
+      const easeInOutCubic = progress => progress < 0.5 ? 4 * progress ** 3 : 1 - (-2 * progress + 2) ** 2 / 2; // Easing function
+      
+      window.scrollTo(0, startingY + distance * easeInOutCubic(progress / duration));
+  
+      if (progress < duration) {
+          requestAnimationFrame(step);
+      }
+  }
+
+  requestAnimationFrame(step);
+}
+
 function introScroll() {
-    slowScrollToElement('intro_section', 5500);
+  slowScrollToElement('intro_section', 5500);
+}
+
+function portScroll() {
+  slowScrollToBeforeElement('outro_section', 2500);
 }

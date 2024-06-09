@@ -93,7 +93,7 @@ document.addEventListener('scroll', (e) => { // on scroll
             const beforePort = (TSHeight+IHeight+ISHeight+THeight+BBHeight);
             console.log("Before: "+beforePort, "ScrollY: "+scrollY);
             const portPercent = ((scrollY - beforePort) / PSHeight) * 100;
-            question.style.opacity = (((portPercent)*1.3)-50).toString()+"%";
+            question.style.opacity = (((portPercent)*1.3)-20).toString()+"%";
             var qs = 80 - portPercent;
             if (qs < 3) {
                 qs = 3;

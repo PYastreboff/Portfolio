@@ -141,21 +141,21 @@
     }
 
     .socialsButtonsContainer {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         margin-top: 30vw;
         flex-wrap: wrap;
     }
 
     .icon {
-        width: 30vw;
-        height: 30vw;
+        width: 20vw;
+        height: 20vw;
         border-radius: 30px;
     }
 
     .icon img.socialsImg {
-        width: 20vw;
-        height: 20vw;
+        width: 15vw;
+        height: 15vw;
     }
 
     .textCover {

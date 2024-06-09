@@ -1,5 +1,6 @@
 const titleContainer = document.getElementById("title-container");
 const titles = document.querySelectorAll("#title-container h1.rel");
+const titleScreen = document.getElementById("title-screen");
 const info = document.getElementById("info-text");
 const infoContainer = document.getElementById("info-screen");
 const scrollDown = document.getElementById("sd");
@@ -8,15 +9,21 @@ const infoBar = document.getElementById("info-bar");
 const question = document.getElementById("port-text");
 const introSection = document.getElementById("intro_section");
 const timeline = document.getElementById("timeline");
+const bottomBar = document.getElementById("bottom-bar");
+const portScreen = document.getElementById("port-screen-parralax");
+
 
 const GCard = document.getElementById("graphic-card");
-const CCard = document.getElementById("code-card");
+const CCard = document.getElementById("coding-card");
 
+const TSHeight = titleContainer.offsetHeight
 const TCHeight = titleContainer.offsetHeight;
 const IHeight = infoContainer.offsetHeight;
 const ISHeight = introSection.offsetHeight;
 const THeight = timeline.offsetHeight;
 const IBHeight = infoBar.offsetHeight;
+const BBHeight = bottomBar.offsetHeight;
+const PSHeight = portScreen.offsetHeight;
 
 
 window.onload = function () { 
@@ -32,6 +39,7 @@ window.onbeforeunload = function () {
 
 document.addEventListener('scroll', (e) => { // on scroll
     const scrollY = window.scrollY;
+    console.log(scrollY);
 
     if (scrollY < 1) {
         scrollDown.style.display = "block";
@@ -69,24 +77,24 @@ document.addEventListener('scroll', (e) => { // on scroll
         if (ls < 10) {
             ls = 10;
         }
-        info.style.letterSpacing = ls+"px";
+        info.style.letterSpacing = ls.toString()+"px";
 
         if (scrollY > (TCHeight+IHeight+ISHeight+THeight)) {
             info.style.opacity = "0%";
         }
 
 
-        if (scrollY < (TCHeight+IHeight+ISHeight+THeight-100)) {
+        if (scrollY < (TCHeight+IHeight+ISHeight+THeight-(.5*THeight))) {
             question.style.opacity = "0%";
             GCard.style.marginRight = "100vw";
             CCard.style.marginLeft = "100vw";
         }
-        if (scrollY > (TCHeight+IHeight+ISHeight+THeight)) {
-
-            const total = (TCHeight+IHeight+ISHeight+THeight);
-            const portPercent = (((scrollY - total) / (window.innerHeight*2)) * 100) - 50;
-            question.style.opacity = (portPercent+10).toString()+"%";
-            var qs = 80 - portPercent*1.5;
+        if (scrollY > (TCHeight+IHeight+ISHeight+THeight+BBHeight)) {
+            const beforePort = (TSHeight+IHeight+ISHeight+THeight+BBHeight);
+            console.log("Before: "+beforePort, "ScrollY: "+scrollY);
+            const portPercent = ((scrollY - beforePort) / PSHeight) * 100;
+            question.style.opacity = (((portPercent)*1.3)-50).toString()+"%";
+            var qs = 80 - portPercent;
             if (qs < 3) {
                 qs = 3;
             }

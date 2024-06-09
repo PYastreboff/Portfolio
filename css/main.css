@@ -234,7 +234,7 @@ body::-webkit-scrollbar {
 
 .bottom-bar {
     position: relative;
-    z-index: 200;
+    z-index: 10000;
 }
 
 .b {
@@ -1187,4 +1187,9 @@ header #headerHelp {
 
 .responsive-newline {
     content: "";
+}
+
+#bottom-bar {
+    position: relative;
+    z-index: 100;
 }

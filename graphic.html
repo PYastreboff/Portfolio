@@ -2,7 +2,7 @@
 <html land="en">
     <head>
         <!-- For those looking in the source, yes, I did make this myself all from vanilla HTML, CSS and Javascript -->
-        <title>Peter Yastreboff</title>
+        <title>Peter Yastreboff - Graphic Design Portfolio</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
@@ -18,6 +18,9 @@
     </head>
     
     <body>
+        <header>
+
+        </header>
         <div class="g-title">
 
         </div>
@@ -86,8 +89,20 @@
                 </div>
             </div>
         </div>
+        <footer>
+            <script>
+                const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show");
+                    } else {
+                        entry.target.classList.remove("show");
+                    }
+                    })
+                });
+                const hiddenElements = document.querySelectorAll(".hidden");
+                hiddenElements.forEach((element) => observer.observe(element)); 
+            </script>
+        </footer>
     </body>
-    <footer>
-
-    </footer>
 </html>

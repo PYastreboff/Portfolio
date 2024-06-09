@@ -239,4 +239,8 @@
     .responsive-newline {
         display: block;
     }
+
+    #port-text {
+        font-size: 1rem;
+    }
 }

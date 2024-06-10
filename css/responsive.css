@@ -243,4 +243,8 @@
     #port-text {
         font-size: 1rem;
     }
+
+    #g-header svg {
+        max-height: 45%;
+    }
 }

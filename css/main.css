@@ -275,6 +275,11 @@ body::-webkit-scrollbar {
     background-image: url(../img/blue.jpg);
 }
 
+#code-body .bb {
+    background-color: #ee1313;
+    background-image: url(../img/red.jpg);
+}
+
 .miniTitle {
     color: #ffffff;
     font-size: 2rem;
@@ -1248,4 +1253,76 @@ header #headerHelp {
     position: relative;
     z-index: 101;
     display: block;
+}
+
+#g-header {
+    position: relative;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(744deg,#8ce4ff,#1342ee 60%,#e17be1);
+    overflow-y: hidden;
+}
+
+#g-header svg {
+    align-self: center;
+    margin: 0px;
+    justify-self: flex-end;
+    width: 100vw;
+    min-width: 100vw;
+    max-height: 30%;
+}
+
+.g-infotop {
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    top: 5.6rem;
+    left: 0;
+    right: 0;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    height: 40vh;
+    overflow-y: hidden;
+    justify-self: top;
+    top: 6vh;
+}
+
+.g-infotop i {
+    font-size: 2.5rem;
+    padding-bottom: 0.1rem;
+    margin: 1
+}
+
+.g-infotop p {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: .4rem .5rem;
+    
+}
+
+.icon {
+    transition: color 0.3s ease;
+    font-size: 2rem;
+}
+.portfolios .icon {
+    height: fit-content;
+    width: fit-content;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.g .portfolios, .g .socialsButtonsContainer{
+    margin-top: 2rem;
+    height: 30vh;
+    align-items: center;
+}
+
+.icon:hover {
+    text-decoration: none;
+    color: #1d70ff;
+}
+
+.socialsButtonsContainer a {
+    text-decoration: none;
 }

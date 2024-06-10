@@ -64,7 +64,7 @@
                 </div>
                 <div class="scroll" id="sc">Scroll Down</div>
                 <div class="scroll-down-container" onclick="javascript:introScroll()">
-                    <div class="scroll-down" id="sd"></div>
+                    <i id="sd" class="fa-solid fa-chevron-down scroll-down"></i>
                 </div>
             </div>
             <div id="info-screen">
@@ -118,43 +118,6 @@
                         </div>
                     </li>
                 </ul>
-                <h1 class="timeline-title d pad-top1">Coding Expertise</h1>
-                <div class="exdiv1">
-                    <ul class="experiences-div">
-                        <li>
-                            <h3 class="extitle"><i class="exicon ph-monitor"></i>Python</h3>
-                            <p class="exdescription stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>  <!-- Filled: &#9733; Empty: &#9734;  -->
-                        </li>
-                        <li>
-                            <h3 class="extitle"><i class="exicon ph-monitor"></i>C</h3>
-                            <p class="exdescription stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-                        </li>
-                        <li>
-                            <h3 class="extitle"><i class="exicon ph-monitor"></i>Swift</h3>
-                            <p class="exdescription stars">&#9733;&#9733;&#9733;&#9734;&#9734;</p>
-                        </li>
-                        <li>
-                            <h3 class="extitle"><i class="exicon ph-monitor"></i>HTML</h3>
-                            <p class="exdescription stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-                        </li>
-                        <li>
-                            <h3 class="extitle"><i class="exicon ph-monitor"></i>Javascript</h3>
-                            <p class="exdescription stars">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                        </li>
-                        <li>
-                            <h3 class="extitle"><i class="exicon ph-monitor"></i>Java</h3>
-                            <p class="exdescription stars">&#9733;&#9734;&#9734;&#9734;&#9734;</p>
-                        </li>
-                        <li>
-                            <h3 class="extitle"><i class="exicon ph-monitor"></i>MIPS</h3>
-                            <p class="exdescription stars">&#9733;&#9733;&#9733;&#9734;&#9734;</p>
-                        </li>
-                        <li>
-                            <h3 class="extitle"><i class="exicon ph-monitor"></i>PHP</h3>
-                            <p class="exdescription stars">&#9733;&#9733;&#9733;&#9734;&#9734;</p>
-                        </li>
-                    </ul>
-                </div>
             </div>
             <div class="bottom-bar" id="bottom-bar">
                 <div id="info-bar" class="sections row info-bar">
@@ -205,6 +168,9 @@
                             <!-- <div class="card-port-name">My Languages</div> -->
                         </div>
                     </div>
+                </div>
+                <div class="port-arrow" onclick="javascript:endScroll()">
+                    <i onclick="" class="fa-solid fa-chevron-down"></i>
                 </div>
                 <!--
                 <div class="portfolio-sub-box">
@@ -261,8 +227,7 @@
                 <h1>© Peter Yastreboff 2022. All Rights Reserved.</h1>
             </div>
         </div>
-        <footer>
-
+        <footer id="i-footer">
         </footer>
     </body>
 </html>

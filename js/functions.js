@@ -124,3 +124,7 @@ function introScroll() {
 function portScroll() {
   slowScrollToBeforeElement('outro_section', 2500);
 }
+
+function endScroll() {
+  slowScrollToBeforeElement('i-footer', 2500);
+}

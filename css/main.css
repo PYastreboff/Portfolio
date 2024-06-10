@@ -125,23 +125,17 @@ body::-webkit-scrollbar {
     bottom: 25px;
     display: block;
     text-align: center;
-    font-size: 20px;
     z-index: 100;
     text-decoration: none;
     text-shadow: 0;
-    width: 16px;
-    height: 16px;
-    border-bottom: 2px solid #fff;
-    border-right: 2px solid #fff;
     z-index: 9;
-    left: calc(50% - 8px);
-    -webkit-transform: translate(-50%, 0%) rotate(45deg);
-    -moz-transform: translate(-50%, 0%) rotate(45deg);
-    transform: translate(-50%, 0%) rotate(45deg);
-    -webkit-animation: fade_move_down 4s ease-in-out infinite;
-    -moz-animation:    fade_move_down 4s ease-in-out infinite;
-    animation:         fade_move_down 4s ease-in-out infinite;
-    margin: 1rem;
+    left: calc(50% - 1.5rem);
+    -webkit-animation: fade_move_down2 4s ease-in-out infinite;
+    -moz-animation:    fade_move_down2 4s ease-in-out infinite;
+    animation:         fade_move_down2 4s ease-in-out infinite;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
 }
 
 .scroll-down-container:hover {
@@ -462,7 +456,7 @@ body::-webkit-scrollbar {
     color: rgb(141, 166, 235);
 }
 
-.twitter:active, .email:active, .phone:active {
+.twitter:active, .email:active, .phone:active, .icon:active {
     /*transform: scale(1.6);*/  
     transition: box-shadow .3s, transform 6s cubic-bezier(.5, 4, 1, 2);
     
@@ -957,6 +951,10 @@ header #headerHelp {
 	border-radius: 50%;
 }
 
+.c-e>li .exicon {
+    background-color: #ee1313;
+}
+
 .experiences-div {
     display: flex;
     flex-wrap: wrap;
@@ -1016,6 +1014,10 @@ header #headerHelp {
     height: 350vh;
     justify-self: center;
     align-self: center;
+    
+}
+
+.e-card {
     position: absolute;
     z-index: 3;
 }
@@ -1273,6 +1275,25 @@ header #headerHelp {
     max-height: 30%;
 }
 
+#c-header {
+    position: relative;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(744deg,#ff8ca5,#ee1313 60%,#ffaa2b);
+    overflow-y: hidden;
+}
+
+#c-header svg {
+    align-self: center;
+    margin: 0px;
+    justify-self: flex-end;
+    width: 100vw;
+    min-width: 100vw;
+    max-height: 30%;
+}
+
+
 .g-infotop {
     text-align: center;
     font-size: 20px;
@@ -1323,6 +1344,44 @@ header #headerHelp {
     color: #1d70ff;
 }
 
+.c .icon:hover {
+    text-decoration: none;
+    color: #ee1313;
+}
+
 .socialsButtonsContainer a {
     text-decoration: none;
+}
+
+#end.c, #end.g, .portfolios {
+    min-height: 10vh;
+    height: 30vh;
+}
+
+.port-arrow {
+    color: white;
+    margin-top: auto;
+
+    padding: 1rem;
+    padding-bottom: 2rem;
+    position: relative;
+    display: block;
+    z-index: 1000;
+}
+
+.port-arrow i {
+    font-size: 1.5rem;
+    -webkit-animation: fade_move_down2 4s ease-in-out infinite;
+    -moz-animation:    fade_move_down2 4s ease-in-out infinite;
+    animation:         fade_move_down2 4s ease-in-out infinite;
+}
+
+.port-arrow:hover {
+    cursor: pointer;
+}
+
+.port-screen-parralax {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
 }

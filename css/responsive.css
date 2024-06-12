@@ -247,4 +247,8 @@
     #g-header svg {
         max-height: 45%;
     }
+
+    .experiences-div>li {
+        max-width: 90%;
+    }
 }

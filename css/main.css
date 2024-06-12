@@ -212,6 +212,15 @@ body::-webkit-scrollbar {
     overflow: hidden;
 }
 
+.foreword-text h3 {
+    /* font-weight: 10; */
+    color: #222;
+    max-width: 50vw;
+    word-spacing: .4rem;
+    min-height: calc(100% -  2.5rem);
+    margin-top: 3.5rem;
+    overflow: hidden;
+}
 
 .sec {
     display: flex;
@@ -288,6 +297,7 @@ body::-webkit-scrollbar {
 
 .vid {
     max-width: 50vw;
+    width: 80vw;
 }
 
 .desc {
@@ -920,6 +930,7 @@ header #headerHelp {
 		box-shadow 250ms ease,
 		background-color 250ms ease;
     transition: transform 0.5s ease;
+    max-width: 40%;
 }
 
 .experiences-div>li:hover {
@@ -940,7 +951,14 @@ header #headerHelp {
 .experiences-div>li .exdescription {
 	margin: 0;
 	color: black;
+    
+    font-family: 'Roboto', sans-serif;
 }
+
+.exdescription.hob {
+    font-size: medium;
+}
+
 
 .experiences-div>li .exicon {
 	font-size: 1.5rem;
@@ -953,6 +971,14 @@ header #headerHelp {
 
 .c-e>li .exicon {
     background-color: #ee1313;
+}
+
+.e-e>li .exicon {
+    padding: .5rem;
+    background-color: transparent;
+    border-radius: none;
+    color: #1d70ff;
+    font-size: 2rem;
 }
 
 .experiences-div {
@@ -1290,9 +1316,8 @@ header #headerHelp {
     justify-self: flex-end;
     width: 100vw;
     min-width: 100vw;
-    max-height: 30%;
+    max-height: 40%;
 }
-
 
 .g-infotop {
     text-align: center;
@@ -1306,7 +1331,7 @@ header #headerHelp {
     height: 40vh;
     overflow-y: hidden;
     justify-self: top;
-    top: 6vh;
+    top: 10vh;
 }
 
 .g-infotop i {
@@ -1384,4 +1409,54 @@ header #headerHelp {
     display: flex;
     flex-direction: column;
     justify-content: baseline;
+}
+
+.hobby-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-self: flex-start;
+}
+
+.hobby-box i {
+    padding: 1rem;
+    font-size: 2.8rem;
+}
+.hobby-box p {
+    font-size: 2rem;
+    padding: 1rem;
+}
+.foreword-text.hobby {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.top-back {
+    position: sticky;
+    top: 2%;
+    right: 2%;
+    position: fixed;
+    background-color: white;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add drop shadow */
+    transition: transform 0.2s ease-in-out;
+}
+
+.top-back i {
+    font-size: 2rem;
+    overflow-y: hidden;
+
+}
+
+.top-back:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    color: #222;
 }

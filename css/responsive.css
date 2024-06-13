@@ -251,4 +251,15 @@
     .experiences-div>li {
         max-width: 90%;
     }
+
+    .title {
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        width: calc(100vw - 4rem);
+    }
+    .title h1 {
+        min-width: 90vw;
+    }
+
 }

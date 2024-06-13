@@ -1,320 +1,360 @@
+
 <!DOCTYPE html>
-<html land="en">
-    <head>
-        <!-- For those looking in the source, yes, I did make this myself all from vanilla HTML, CSS and Javascript -->
-        <title>Peter Yastreboff</title>
+<html lang="en">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8">
-        
-        <link rel="stylesheet" href="./css/main.css">
-        <link rel="stylesheet" href="./css/responsive.css">
-        <link rel="stylesheet" href="./css/loader.css">
-        <link rel="stylesheet" href="./css/fontawesome/css/all.css">
-        <script src="./js/functions.js"></script>
-        <script defer src="./js/app.js"></script>
-        <script src="./js/loaded.js" defer></script>
-        <link type="image/png" sizes="300x300" rel="icon" href="img/logo.svg">
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <title>vCard - About</title>
+
+	<!-- Meta Data -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="address=no"/>
+    <meta name="author" content="ArtTemplate" />
+    <meta name="description" content="vCard" />
+
+    <!-- Twitter data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ArtTemplates">
+    <meta name="twitter:title" content="vCard">
+    <meta name="twitter:description" content="vCard">
+    <meta name="twitter:image" content="../assets/images/social.jpg">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="ArtTemplate" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="your url website" />
+    <meta property="og:image" content="../assets/images/social.jpg" />
+    <meta property="og:description" content="vCard" />
+    <meta property="og:site_name" content="vCard" />
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="144x144" href="../assets/images/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../assets/images/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../assets/images/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicons/apple-touch-icon-57x57.png">
+	<link rel="shortcut icon" href="../assets/images/favicons/favicon.png" type="image/png">
+
+    <!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+	
+</head>
+<body>
+    <main class="main">
+	    <div class="container gutter-top gutter-bottom">
+		    <div class="row sticky-parent">
+			    <!-- Sidebar -->
+                <aside class="col-12 col-md-12 col-xl-3">
+				    <div class="sidebar box-outer sticky-column">
+						<!-- My photo -->
+						<div class="sidebar__base-info">
+					    	<figure class="avatar-box">
+                                <img src="../assets/images/my-avatar.png" alt="Ricardo Black">
+						    </figure>
+
+						    <div class="text-xl-center">
+						        <h3 class="title title--h3 sidebar__name">Ricardo Black</h3>
+							    <div class="badge">Creative Director</div>
+						    </div>
+
+							<button class="btn btn--small btn--icon-right sidebar__btn js-btn-toggle"><span>Show Contacts</span><i class="feathericon-chevron-down"></i></button>
+						</div>
+
+						<div class="sidebar__additional-info js-show">
+							<div class="separation"></div>
+		                    <ul class="details-info">
+							    <!-- Email -->
+							    <li class="details-info__item">
+							        <span class="box box--s2 icon-box"><i class="font-icon icon-envelope"></i></span>
+								    <div class="contacts-block__info">
+									    <span class="overhead">Email</span>
+									    <a class="text-overflow" href="mailto:ricardo@example.com" title="ricardo@example.com">ricardo@example.com</a>
+								    </div>
+							    </li>
+							    <!-- Phone -->
+						 	    <li class="details-info__item">
+								    <span class="box box--s2 icon-box"><i class="font-icon icon-phone"></i></span>
+								    <div class="contacts-block__info">
+									    <span class="overhead">Phone</span>
+							            <span class="text-overflow" title="+1 (070) 123-4567">+1 (070) 123-4567</span>
+								    </div>	
+							    </li>
+								<!-- Birthday -->
+					            <li class="details-info__item">
+								    <span class="box box--s2 icon-box"><i class="font-icon icon-calendar"></i></span>
+								    <div class="contacts-block__info">
+									    <span class="overhead">Birthday</span>
+							            <span class="text-overflow" title="March 12, 1995">March 12, 1995</span>
+								    </div>
+							    </li>
+								<!-- Location -->
+						        <li class="details-info__item">
+								    <span class="box box--s2 icon-box"><i class="font-icon icon-location"></i></span>
+								    <div class="contacts-block__info">
+									    <span class="overhead">Location</span>
+									    <span class="text-overflow" title="San-Francisco, USA">San-Francisco, USA</span>
+								    </div>
+							    </li>
+					        </ul>
+						    <div class="separation d-xl-none"></div>
+
+						    <!-- Social -->
+						    <div class="social">
+							    <a class="social__link" href="https://www.facebook.com/"><i class="feathericon-facebook"></i></a>
+							    <a class="social__link" href="https://www.behance.com/"><i class="feathericon-twitter"></i></a>
+						  	    <a class="social__link" href="https://www.linkedin.com/"><i class="feathericon-instagram"></i></a>
+						    </div>
+						</div>	
+					</div>	
+		        </aside>
+		        
+				<!-- Content -->
+		        <div class="col-12 col-md-12 col-xl-9">
+				    <div class="box-outer">
+					    <!-- Menu -->
+						<div class="nav-container">
+						    <ul class="nav">
+                                <li class="nav__item"><a class="active" href="index.html">About</a></li>
+								<li class="nav__item"><a href="resume.html">Resume</a></li>
+                                <li class="nav__item"><a href="portfolio.html">Portfolio</a></li>
+                                <li class="nav__item"><a href="blog.html">Blog</a></li>
+                                <li class="nav__item"><a href="contact.html">Contact</a></li>
+                            </ul>
+						</div>
+						
+					    <!-- About -->
+						<div class="pb-0 pb-sm-2">
+		                    <h1 class="title title--h1 title__separate">About Me</h1>
+						    <p>I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.</p>
+                            <p>My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.</p>
+					    </div>
+						
+					    <!-- What -->
+						<h2 class="title title--h2 mt-3">What I'm Doing</h2>
+						<div class="row">
+							<!-- Case Item -->
+							<div class="col-12 col-lg-6">
+							    <div class="case-item box box--s2 box-inner">
+									<img class="case-item__icon" src="../assets/icons/icon-design.svg" alt="" />
+									<div>
+									    <h3 class="title title--h3">Web Design</h3>
+										<p class="case-item__caption">The most modern and high-quality design made at a professional level.</p>
+									</div>	
+								</div>
+							</div>
+								
+							<!-- Case Item -->
+							<div class="col-12 col-lg-6">
+							    <div class="case-item box box--s2 box-inner">
+									<img class="case-item__icon" src="../assets/icons/icon-dev.svg" alt="" />
+									<div>
+									    <h3 class="title title--h3">Web Development</h3>
+										<p class="case-item__caption">High-quality development of sites at the professional level.</p>
+									</div>
+								</div>
+							</div>
+								
+							<!-- Case Item -->
+							<div class="col-12 col-lg-6">
+								<div class="case-item box box--s2 box-inner">
+								    <img class="case-item__icon" src="../assets/icons/icon-app.svg" alt="" />
+									<div>
+								        <h3 class="title title--h3">Mobile Apps</h3>
+									    <p class="case-item__caption">Professional development of applications for iOS and Android.</p>
+									</div>
+								</div>
+							</div>
+								
+							<!-- Case Item -->
+							<div class="col-12 col-lg-6">
+								<div class="case-item box box--s2 box-inner">
+									<img class="case-item__icon" src="../assets/icons/icon-photo.svg" alt="" />
+									<div>
+									    <h3 class="title title--h3">Photography</h3>
+										<p class="case-item__caption">I make high-quality photos of any category at a professional level.</p>
+									</div>
+								</div>
+							</div>
+						</div>	
+						
+						<!-- Testimonials -->
+						<div class="testimonials">
+						    <h2 class="title title--h2 mt-3">Testimonials</h2>
+						
+						    <div class="swiper-container js-carousel-review">
+                                <div class="swiper-wrapper">
+								    <!-- Item review -->
+                                    <div class="swiper-slide review-item box box--s2 box-inner js-open-review" data-mfp-src="#review-1" data-effect="mfp-zoom-out">
+										<figure class="box box-avatar box-avatar--not-border">
+                                            <img src="../assets/images/avatar-1.png" alt="Daniel Lewis">
+										</figure>
+									    <h4 class="title title--h3">Daniel Lewis</h4>
+										<p class="review-item__caption">Ricardo was hired to create a corporate identity. We were very pleased with the work done...</p>
+									</div>
+									
+									<!-- Item review -->
+                                    <div class="swiper-slide review-item box box--s2 box-inner js-open-review" data-mfp-src="#review-2" data-effect="mfp-zoom-out">
+                                        <figure class="box box-avatar box-avatar--not-border">
+                                            <img src="../assets/images/avatar-2.png" alt="Daniel Lewis">
+										</figure>
+									    <h4 class="title title--h3">Jessica Miller</h4>
+										<p class="review-item__caption">Thanks to the skill of Ricardo, we have a design that we can be proud of. We are impressed with...</p>
+									</div>
+									
+									<!-- Item review -->
+                                    <div class="swiper-slide review-item box box--s2 box-inner js-open-review" data-mfp-src="#review-3" data-effect="mfp-zoom-out">
+										<figure class="box box-avatar box-avatar--not-border">
+                                            <img src="../assets/images/avatar-3.png" alt="Daniel Lewis">
+										</figure>
+									    <h4 class="title title--h3">Emily Evans</h4>
+										<p class="review-item__caption">Ricardo did a miracle with my website. It looks exactly as I imagined it. Now I have a profession...</p>
+									</div>
+
+									<!-- Item review -->
+									<div class="swiper-slide review-item box box--s2 box-inner js-open-review" data-mfp-src="#review-4" data-effect="mfp-zoom-out">
+										<figure class="box box-avatar box-avatar--not-border">
+											<img src="../assets/images/avatar-4.png" alt="Daniel Lewis">
+										</figure>
+										<h4 class="title title--h3">Henry William</h4>
+										<p class="review-item__caption">Thank you very much for your work on our project. It was a big help for us. Thanks to the...</p>
+									</div>
+                                </div>
     
-    <body>
-        <header>
-            <div id="headerHelp" onclick="javascript:showModal('help')"><img src="./img/help-circle-outline.svg"></img></div>
-        </header>
-        <div id="content">
-            <div id="loader">
-                <div id="loading-wrapper">
-                    <div id="loading-text"><!-- LOADING IMAGE --><img src="./img/logo.svg"></img></div>
-                    <div id="loading-content"></div> <!-- loading circle -->
-                  </div>
-            </div>
-            <div id="helpModal">
-                <div class="modal">
-                    <div class="modalTop">
-                        <h1>How To Use</h1>
-                        <img onclick="javascript:closeModal('help')" src="./img/close-outline.svg"></img>
-                    </div>
-                    <div class="modalInfo">
-                        <p>To Use this website, scroll down just as you would any other webpage. The only difference is this website uses parralax illusions to create the sense that objects are moving around the screen, when in reality you are scrolling down the page.</p>
-                        <p><br>Other animations included in this website include scroll animations in which the content will fade in from the sides of the screen. These animations do not require you to scroll, they run automatically.</p>
-                        <!-- #ed2939 -->
-                        <p style="color: black"><br>⚠️ <span style="color: #ed2939;">Warning:</span> This parralax scroll illusion along with all other animations on this page may cause lag, These website has been tested to run smoothly on most machines, however if it doesn't run smoothly on your computer consider scrolling through the page for the animations to load.</p>
-                        <p><br>If any further problems arise, please feel free to contact me. My Socials are provided at the bottom of the website.</p>
-                        <p><br>Enjoy!</p>
-                    </div>
-                </div>
-            </div>
-            <div id="title-screen">
-                <div id="title-container">
-                    <h1 style="color: #1008ff;" class="rel">Peter Yastreboff</h1>
-                    <h1 style="color: #0831ff;" class="rel">Peter Yastreboff</h1>
-                    <h1 style="color: #0867ff;" class="rel">Peter Yastreboff</h1>
-                    <h1 style="color: #08a4ff;" class="rel">Peter Yastreboff</h1>
-                    <h1 style="color: #08eaff;" class="rel">Peter Yastreboff</h1>
-                    <h1 style="color: #08eaff;" class="rel">Peter Yastreboff</h1>
-                    <h1 style="color: #d1faff;" class="rel">Peter Yastreboff</h1>
-                    <h1 style="color: white;">Peter Yastreboff</h1>
-                    <h1 style="color: #d1faff;" class="rel">Peter Yastreboff</h1>
-                    <h1 style="color: #08eaff;" class="rel">Peter Yastreboff</h1>
-                    <h1 style="color: #08eaff;" class="rel">Peter Yastreboff</h1>
-                    <h1 style="color: #08a4ff;" class="rel">Peter Yastreboff</h1>
-                    <h1 style="color: #0867ff;" class="rel">Peter Yastreboff</h1>
-                    <h1 style="color: #0831ff;" class="rel">Peter Yastreboff</h1>
-                    <h1 style="color: #1008ff;" class="rel">Peter Yastreboff</h1>
-                </div>
-                <div class="scroll" id="sc">Scroll Down</div>
-                <div class="scroll-down-container" onclick="javascript:introScroll()">
-                    <i id="sd" class="fa-solid fa-chevron-down scroll-down"></i>
-                </div>
-            </div>
-            <div id="info-screen">
-                <h1 id="info-text">Digital Interactive Resume</h1>
-            </div>
-            <div class="foreword" id="intro_section">
-                <div id="top-bar">
-                    <a href="https://twitter.com/PeterY03800587" class="top-bar-item">
-                        <img src="./img/logo-x.svg"></img>
-                    </a>
-                    <a href="https://github.com/PYastreboff/" class="top-bar-item">
-                        <img src="./img/logo-github.svg"></img>
-                    </a>
-                    <a href="mailto:zowzow811@gmail.com" class="top-bar-item">
-                        <img src="./img/mail-outline.svg"></img>
-                    </a>
-                    <a href="tel:0490368932" class="top-bar-item">
-                        <img src="./img/call-outline.svg"></img>
-                    </a>
-                    <a href="https://www.hackerrank.com/profile/Peter_Y" class="top-bar-item">
-                        <img src="./img/logo-hackerrank.svg"></img>
-                    </a>
-                </div>
-                <div class="sections row">
-                    <div class="title">
-                        <h1 class="hidden">Foreword</h1>
-                        <h2 class="hidden d"><b>Who am I?</b> Here's the perfect place to find out!</h2>
-                    </div>
-                    <div class="foreword-text hidden d reverse">
-                        <h3>As a testament to my passion for learnig new skills, along with people skills, my skills in web development and graphic design, I have decided to create this Digital Interactive Portfolio in order to showcase my skills further and hopefully shine a light into the person I am. I hope you enjoy!</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="timeline-div" id="timeline">
-                <h1 class="timeline-title d">Education</h1>
-                <ul class="timeline">
+                                <div class="swiper-pagination"></div>
+                            </div>
+						</div>
+						
+						<!-- Clients -->
+						<h2 class="title title--h2 mt-4">Clients</h2>
+						<div class="swiper-container js-carousel-clients">
+                            <div class="swiper-wrapper">
+								<!-- Item client -->
+                                <figure class="swiper-slide">
+									<a href="#"><img class="logo-client" src="../assets/images/clients/logo-1-color.png" alt="Logo" /></a>
+								</figure>
+									
+								<!-- Item client -->
+                                <figure class="swiper-slide">
+									<a href="#"><img class="logo-client" src="../assets/images/clients/logo-2-color.png" alt="Logo" /></a>
+								</figure>
 
-                    <!-- Item 1 -->
-                    <li>
-                        <div class="direction-r reverse hidden show">
-                            <div class="flag-wrapper">
-                                <span class="flag">Turramurra Public School</span>
-                                <span class="time-wrapper"><span class="time">2010 - 2015</span></span>
-                            </div>
-                            <div class="tmdesc">Here I had basic Primary School education and made some of my lifelong freinds.</div>
-                        </div>
-                    </li>
-                
-                    <!-- Item 2 -->
-                    <li>
-                        <div class="direction-l hidden show d">
-                            <div class="flag-wrapper">
-                                <span class="flag">St. Pius X College</span>
-                                <span class="time-wrapper"><span class="time">2016 - 2022</span></span>
-                            </div>
-                            <div class="tmdesc">This is where I received my High School Certificate and developed my love for Computing and Graphic Design.</div>
-                        </div>
-                    </li>
-                
-                    <!-- Item 3 -->
-                    <li>
-                        <div class="direction-r hidden reverse show d2">
-                            <div class="flag-wrapper">
-                                <span class="flag">UNSW</span>
-                                <span class="time-wrapper"><span class="time">2023 - Present</span></span>
-                            </div>
-                            <div class="tmdesc">Here I am studying a double degree in Computer Science and Aeronautical Engineering, following my passions.</div>
-                        </div>
-                    </li>
-                </ul>
-                <div class="foreword">
-                    <div class="sections row">
-                        <div class="title">
-                            <h1 class="" style="font-size: 2.5rem;">A Bit More About Me</h1>
-                            <h2 class="hidden d">Here is a little information about my hobbies and interests, along with some essential skills I hold.</h2>
-                        </div>
-                        <div class="exdiv1">
-                            <ul class="experiences-div e-e ">
-                                <li>
-                                    <h3 class="extitle"><i class="exicon fa-solid fa-handshake"></i></i>Meeting New People</h3>
-                                    <p class="exdescription hob stars hidden d reverse">As someone with a natural mix of EQ and IQ, I love to meet and learn about new people.</p>  <!-- Filled: &#9733; Empty: &#9734;  -->
-                                </li>
-                                <li>
-                                    <h3 class="extitle"><i class="exicon fa-solid fa-music"></i></i>Piano</h3>
-                                    <p class="exdescription hob stars hidden d reverse">I love to play both Modern and Classical piano, learning with AMEB Grades.</p>  <!-- Filled: &#9733; Empty: &#9734;  -->
-                                </li>
-                                <li>
-                                    <h3 class="extitle"><i class="exicon fa-solid fa-file-code"></i></i>Coding</h3>
-                                    <p class="exdescription hob stars hidden d reverse">I have a natural talent for software design and problem solving.</p>  <!-- Filled: &#9733; Empty: &#9734;  -->
-                                </li>
-                                <li>
-                                    <h3 class="extitle"><i class="exicon fa-solid fa-brush"></i></i>Arts</h3>
-                                    <p class="exdescription hob stars hidden d reverse">In my spare time I love to create things and design art for clients.</p>  <!-- Filled: &#9733; Empty: &#9734;  -->
-                                </li>
-                                <li>
-                                    <h3 class="extitle"><i class="exicon fa-solid fa-person-running"></i></i>Running</h3>
-                                    <p class="exdescription hob stars hidden d reverse">To keep a fit lifestyle I love going for runs around my area.</p>  <!-- Filled: &#9733; Empty: &#9734;  -->
-                                </li>
-                                <li>
-                                    <h3 class="extitle"><i class="exicon fa-solid fa-people-group"></i></i>Working As a Team</h3>
-                                    <p class="exdescription hob stars hidden d reverse">I have a natural ability to integrate and grow into any team, due to my outgoing and easy personality.</p>  <!-- Filled: &#9733; Empty: &#9734;  -->
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="foreword">
-                    <div class="sections row">
-                        <div class="title">
-                            <h1 class="" style="font-size: 2.5rem; color: #ff8c00">My Achievements</h1>
-                            <h2 class="hidden d">Here is a few of my Responsibilities and Achievements I hold.</h2>
-                        </div>
-                        <div class="exdiv1">
-                            <ul class="experiences-div a-e">
-                                <li>
-                                    <h3 class="extitle"><i class="exicon fa-solid fa-award"></i>ADF Long Tan Future Innovators Award</h3>
-                                    <p class="exdescription hob stars hidden d reverse">For significant academic achievement and sustained extracurricular involvement.</p>  <!-- Filled: &#9733; Empty: &#9734;  -->
-                                </li>
-                                <li>
-                                    <h3 class="extitle"><i class="exicon fa-solid fa-medal"></i></i>Academic Honours First Class</h3>
-                                    <p class="exdescription hob stars hidden d reverse">I achieved in the top 5% of Students upon Graduation.</p>
-                                </li>
-                                <li>
-                                    <h3 class="extitle"><i class="exicon fa-solid fa-clapperboard"></i></i>Lead Cinematographer</h3>
-                                    <p class="exdescription hob stars hidden d reverse">Working for a Drama/Film Production,“Not Dead Yet”.</p>  <!-- Filled: &#9733; Empty: &#9734;  -->
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bottom-bar" id="bottom-bar">
-                <div id="info-bar" class="sections row info-bar">
-                    <div class="sec row">
-                        <h1 class="b">Name: </h1>
-                        <h1 class="t">Peter Yastreboff</h1>
-                    </div>
-                    <div class="sec row">
-                        <h1 class="b">Age: </h1>
-                        <h1 id="age" class="t">17</h1>
-                    </div>
-                    <div class="sec row">
-                        <h1 class="b">Location: </h1>
-                        <h1 class="t">Sydney, Australia</h1>
-                    </div>
-                </div>
-                <div id="down-2" onclick="javascript:portScroll()">
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
-            </div>
-            <div id="port-screen-parralax">
-                <h1 id="port-text">My <span class="responsive-newline"></span>Experience:</h1>                <div id="portfolio-box" class="">
-                    <div id="graphic-card" class="e-card playing graphic" onclick="window.location.href='./code.html'">
-                        <div class="image"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="infotop">
-                            <i class="fa-solid fa-code port"></i>
-                            <p>Software Design Portfolio</p>
-                            
-                            <div class="card-port-name">Websites</div>
-                            <div class="card-port-name">My Projects</div>
-                            <div class="card-port-name">My Languages</div>
-                        </div>
-                    </div>
-                    <div id="coding-card" class="e-card playing code"  onclick="window.location.href='./graphic.html'">
-                        <div class="image"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="infotop">
-                            <i class="fa-solid fa-paintbrush port"></i>
-                            <p>Graphic Design Portfolio</p>
-                            <div class="card-port-name">Projects</div>
-                            <div class="card-port-name">Experience</div>
-                            <div class="card-port-name">Design Software</div>
-                            <!-- <div class="card-port-name">My Languages</div> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="port-arrow" onclick="javascript:endScroll()">
-                    <i onclick="" class="fa-solid fa-chevron-down"></i>
-                </div>
-                <!--
-                <div class="portfolio-sub-box">
-                    <i class="fa-solid fa-paintbrush fa-icon"></i>
-                    <h1>Graphic Design Portfolio</h1>
-                </div>
-                <div class="portfolio-sub-box">
-                    <i class="fa-solid fa-code fa-icon"></i>
-                    <h1>Software Design Portfolio</h1>
-                    <h2>Coding Experience</h2>
-                    <h2>My Languages</h2>
-                </div>
-                -->
-            </div>
-            <div class="foreword" id="outro_section">
-                <div class="sections row">
-                    <div class="title">
-                        <h1 style="color: #222" class="hidden">Thats all For Now Folks!</h1>
-                    </div>
-                    <div class="foreword-text hidden d reverse" style="margin: 0rem .2rem 1rem .2rem;">
-                        <h3 style="margin-top: 1.5rem;">This is only the start, I can't wait to add more to this! I love to create new things all the time. If I make something I deem as worthy i'll be adding them to this portfolio. All to expand and build on my career and expertise. Thank you for visiting my site, I hope you enjoyed!<br><br>Please Find My Contacts Below:</h3>
-                    </div>
-                </div>
-            </div>
-            <div id="end">
-                <div class="socialsButtonsContainer">
-                    <a href="https://twitter.com/PeterY03800587">
-                        <div class="twitter icon">
-                            <img class="socialsImg" src="./img/logo-x.svg"></img>
-                        </div>
-                    </a>
-                    <a href="mailto:zowzow811@gmail.com">
-                        <div class="email icon">
-                            <img class="socialsImg" src="./img/mail-outline.svg"></img>
-                        </div>
-                    </a>
-                    <a href="https://github.com/PYastreboff/">
-                        <div class="github icon">
-                            <img class="socialsImg" src="./img/logo-github.svg"></img>
-                        </div>
-                    </a>
-                    <a href="tel:0490368932">
-                        <div class="phone icon image">
-                            <img class="socialsImg" src="./img/call-outline.svg"></img>
-                        </div>
-                    </a>
-                    <a href="https://www.hackerrank.com/profile/Peter_Y">
-                        <div class="hackerrank icon image">
-                            <img class="socialsImg" src="./img/logo-hackerrank.svg"></img>
-                        </div>
-                    </a>
-                    
-                </div>
-                <!--
-                <img style="" alt="My Logo" src="./img/logo.svg"></img>
+								<!-- Item client -->
+                                <figure class="swiper-slide">
+								    <a href="#"><img class="logo-client" src="../assets/images/clients/logo-3-color.png" alt="Logo" /></a>
+								</figure>
 
-                <img style="" alt="Twitter Logo" src="./img/twitter.svg"></img>
-                <img style="" alt="Email Logo" src="./img/email.svg"></img>
-                <img style="" alt="Phone Logo" src="./img/phone.svg"></img>
-                -->
-            </div>
-            <div class="copyright">
-                <h1>Made By Peter Yastreboff 2022.</h1>
-                <h1>© Peter Yastreboff 2022. All Rights Reserved.</h1>
-            </div>
-        </div>
-        <footer id="i-footer">
-        </footer>
-    </body>
+								<!-- Item client -->
+                                <figure class="swiper-slide">
+									<a href="#"><img class="logo-client" src="../assets/images/clients/logo-4-color.png" alt="Logo" /></a>
+								</figure>
+									
+								<!-- Item client -->
+                                <figure class="swiper-slide">
+									<a href="#"><img class="logo-client" src="../assets/images/clients/logo-5-color.png" alt="Logo" /></a>
+								</figure>
+									
+								<!-- Item client -->
+                                <figure class="swiper-slide">
+									<a href="#"><img class="logo-client" src="../assets/images/clients/logo-6-color.png" alt="Logo" /></a>
+								</figure>
+							</div>
+								
+							<div class="swiper-pagination"></div>
+						</div><!-- /swiper-container -->
+					</div><!-- box-outer -->
+		        </div><!-- Content -->
+			</div><!-- sticky-parent -->
+		</div><!-- container -->
+    </main>
+
+    <div class="back-to-top"></div>
+    
+	<!-- Full review 1 -->
+	<div id="review-1" class="popup mfp-hide mfp-with-anim">
+		<div class="row">
+            <div class="col-12 col-sm-2 full-rewiew-con-avatar">
+				<figure class="box box-avatar box-avatar--not-border">
+					<img src="../assets/images/avatar-1.png" alt="Daniel Lewis">
+				</figure>
+				<div class="review-icon-quote"></div>
+			</div>
+			<div class="col-12 col-sm-10 full-rewiew-con-text">
+				<h2 class="title title--h2 mb-1">Daniel Lewis</h2>
+				<span class="review-date">14 June, 2021</span>
+				<p>Ricardo was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client.
+				Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.</p>
+				<p>Ut enim ad nesid utminim veniam, quis nostrud eiusmo exercitation ullamco labori is amco commodo consequat  seds eiusmod. Adipisicing velit eu eiusmod nisi ad nulla. 
+				Magna deserunt ipsum pariatur sunt incididunt culpa cupidatat. Pariatur occaecat enim dolor culpa nisi ea eiusmod do qui culpa consectetur laboris eiusmod anim.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Full review 2 -->
+	<div id="review-2" class="popup mfp-hide mfp-with-anim">
+		<div class="row">
+            <div class="col-12 col-sm-2 full-rewiew-con-avatar">
+				<figure class="box box-avatar box-avatar--not-border">
+					<img src="../assets/images/avatar-2.png" alt="Daniel Lewis">
+				</figure>
+				<div class="review-icon-quote"></div>
+			</div>
+			<div class="col-12 col-sm-10 full-rewiew-con-text">
+				<h2 class="title title--h2 mb-1">Jessica Miller</h2>
+				<span class="review-date">14 June, 2021</span>
+				<p>Ricardo was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client.
+				Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.</p>
+				<p>Ut enim ad nesid utminim veniam, quis nostrud eiusmo exercitation ullamco labori is amco commodo consequat  seds eiusmod. Adipisicing velit eu eiusmod nisi ad nulla. 
+				Magna deserunt ipsum pariatur sunt incididunt culpa cupidatat. Pariatur occaecat enim dolor culpa nisi ea eiusmod do qui culpa consectetur laboris eiusmod anim.</p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Full review 3 -->
+	<div id="review-3" class="popup mfp-hide mfp-with-anim">
+		<div class="row">
+            <div class="col-12 col-sm-2 full-rewiew-con-avatar">
+				<figure class="box box-avatar box-avatar--not-border">
+					<img src="../assets/images/avatar-3.png" alt="Daniel Lewis">
+				</figure>
+				<div class="review-icon-quote"></div>
+			</div>
+			<div class="col-12 col-sm-10 full-rewiew-con-text">
+				<h2 class="title title--h2 mb-1">Emily Evans</h2>
+				<span class="review-date">14 June, 2021</span>
+				<p>Ricardo was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client.
+				Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.</p>
+				<p>Ut enim ad nesid utminim veniam, quis nostrud eiusmo exercitation ullamco labori is amco commodo consequat  seds eiusmod. Adipisicing velit eu eiusmod nisi ad nulla. 
+				Magna deserunt ipsum pariatur sunt incididunt culpa cupidatat. Pariatur occaecat enim dolor culpa nisi ea eiusmod do qui culpa consectetur laboris eiusmod anim.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Full review 4 -->
+	<div id="review-4" class="popup mfp-hide mfp-with-anim">
+		<div class="row">
+            <div class="col-12 col-sm-2 full-rewiew-con-avatar">
+				<figure class="box box-avatar box-avatar--not-border">
+					<img src="../assets/images/avatar-4.png" alt="Daniel Lewis">
+				</figure>
+				<div class="review-icon-quote"></div>
+			</div>
+			<div class="col-12 col-sm-10 full-rewiew-con-text">
+				<h2 class="title title--h2 mb-1">Henry William</h2>
+				<span class="review-date">14 June, 2021</span>
+				<p>Ricardo was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client.
+				Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.</p>
+				<p>Ut enim ad nesid utminim veniam, quis nostrud eiusmo exercitation ullamco labori is amco commodo consequat  seds eiusmod. Adipisicing velit eu eiusmod nisi ad nulla. 
+				Magna deserunt ipsum pariatur sunt incididunt culpa cupidatat. Pariatur occaecat enim dolor culpa nisi ea eiusmod do qui culpa consectetur laboris eiusmod anim.</p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- JavaScripts -->
+	<script src="../assets/js/jquery-3.4.1.min.js"></script>
+	<script src="../assets/js/plugins.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+
+</body>
 </html>

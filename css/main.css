@@ -170,6 +170,7 @@ body::-webkit-scrollbar {
 .sections {
     display: flex;
     padding: 2rem;
+    padding-top: 0px;
     justify-content: space-between;
     width: calc(100vw- 7.5rem);
 }
@@ -1513,4 +1514,35 @@ header #headerHelp {
 
 div.topper {
     background-color: white;
+}
+
+#top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+    height: 4rem;
+    align-items: center;
+    margin: 0px 2rem;
+}
+
+.top-bar-item {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 1px .75rem;
+    overflow-y: hidden;
+    padding: .5rem;
+}
+
+.top-bar-item img {
+    color: #666;
+    fill: #666;
+    overflow-y: hidden;
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: all .2s ease-in-out;
+}
+
+.top-bar-item img:hover {
+    transform: scale(1.25);
 }

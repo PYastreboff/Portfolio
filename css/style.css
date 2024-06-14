@@ -62,7 +62,7 @@
   */
   --color-gradient: linear-gradient(137.84deg, #00a2e2 30.31%, #2e40b8 93.75%);
   --color-gradient-soft: linear-gradient(135deg, rgba(255, 218, 109, 0.0375) 0%, rgba(255, 189, 94, 0) 100%), #1E1E1F;
-  --color-gradient-text: linear-gradient(90deg, #00a2e2, #2e40b8);
+  --color-gradient-text: linear-gradient(90deg, #49b7e3, #3c53ec);
   --color-gradient-border: linear-gradient(155deg, #1b4fd1 0%, rgba(255, 191, 96, 0) 50%);
 
   --color-gradient-border-gray: linear-gradient(135deg, #404040 0%, rgba(64, 64, 64, 0) 48.44%);
@@ -3109,11 +3109,38 @@ button:focus {
   margin-bottom: 0.75rem;
 }
 
+.top-box {
+  margin-right: 2rem;
+}
+
+.top-boxes {
+  display: flex;
+  flex-direction: row;
+}
+
+.top {
+  font-size: 2.8rem;
+  padding: 0px 1rem;
+  background: var(--color-gradient-text);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media only screen and (max-width: 580px) {
   .review-item .title {
     margin-left: 0;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+    
+  }
+  .top-box {
+    margin-right: 1.5rem;
+    
+  }
+  .top-boxes {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 }
 

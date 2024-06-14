@@ -4,42 +4,14 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>vCard - Portfolio</title>
-
-	<!-- Meta Data -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="format-detection" content="telephone=no"/>
-    <meta name="format-detection" content="address=no"/>
-    <meta name="author" content="ArtTemplate" />
-    <meta name="description" content="vCard" />
-
-    <!-- Twitter data -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@ArtTemplates">
-    <meta name="twitter:title" content="vCard">
-    <meta name="twitter:description" content="vCard">
-    <meta name="twitter:image" content="../assets/images/social.jpg">
-
-    <!-- Open Graph data -->
-    <meta property="og:title" content="ArtTemplate" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="your url website" />
-    <meta property="og:image" content="../assets/images/social.jpg" />
-    <meta property="og:description" content="vCard" />
-    <meta property="og:site_name" content="vCard" />
-
+    <title>Peter Yastreboff - Portfolio</title>
 	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="144x144" href="../assets/images/favicons/apple-touch-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="../assets/images/favicons/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="../assets/images/favicons/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicons/apple-touch-icon-57x57.png">
-	<link rel="shortcut icon" href="../assets/images/favicons/favicon.png" type="image/png">
-
+	<link rel="shortcut icon" href="./img/logo.svg" type="image/png">
     <!-- Styles -->
-	<link rel="stylesheet" type="text/css" href="../assets/styles/vendors/bootstrap.min.css"/>
-	<link rel="stylesheet" type="text/css" href="../assets/styles/style.css"/>
-	
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/fontawesome/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
     <main class="main">
 	    <div class="container gutter-top gutter-bottom">
@@ -50,15 +22,15 @@
 						<!-- My photo -->
 						<div class="sidebar__base-info">
 					    	<figure class="avatar-box">
-                                <img src="../assets/images/my-avatar.png" alt="Ricardo Black">
+                                <img src="./img/memoji.png" alt="Peter Y">
 						    </figure>
 
 						    <div class="text-xl-center">
-						        <h3 class="title title--h3 sidebar__name">Ricardo Black</h3>
-							    <div class="badge">Creative Director</div>
+						        <h3 class="title title--h3 sidebar__name">Peter Yastreboff</h3>
+							    <div class="badge">Software Engineer</div>
 						    </div>
 
-							<button class="btn btn--small btn--icon-right sidebar__btn js-btn-toggle"><span>Show Contacts</span><i class="feathericon-chevron-down"></i></button>
+							<button class="btn btn--small btn--icon-right sidebar__btn js-btn-toggle"><span>Show Contacts</span><i class="fa fa-chevron-down"></i></button>
 						</div>
 
 						<div class="sidebar__additional-info js-show">
@@ -66,44 +38,44 @@
 		                    <ul class="details-info">
 							    <!-- Email -->
 							    <li class="details-info__item">
-							        <span class="box box--s2 icon-box"><i class="font-icon icon-envelope"></i></span>
+							        <span class="box box--s2 icon-box"><i class="font-icon fa-regular fa-envelope"></i></span>
 								    <div class="contacts-block__info">
 									    <span class="overhead">Email</span>
-									    <a class="text-overflow" href="mailto:example@mail.com" title="ricardo@example.com">ricardo@example.com</a>
+									    <a class="text-overflow" href="mailto:pyas01@icloud.com" title="pyas01@icloud.com">pyas01@icloud.com</a>
 								    </div>
 							    </li>
 							    <!-- Phone -->
 						 	    <li class="details-info__item">
-								    <span class="box box--s2 icon-box"><i class="font-icon icon-phone"></i></span>
+								    <span class="box box--s2 icon-box"><i class="font-icon fa-solid fa-phone"></i></span>
 								    <div class="contacts-block__info">
 									    <span class="overhead">Phone</span>
-							            <span class="text-overflow" title="+1 (070) 123-4567">+1 (070) 123-4567</span>
+							            <a class="text-overflow" title="0490368932" href="tel:0490368932">+61 (04)90 368 932</a>
 								    </div>	
 							    </li>
-								<!-- Birthday -->
-					            <li class="details-info__item">
-								    <span class="box box--s2 icon-box"><i class="font-icon icon-calendar"></i></span>
-								    <div class="contacts-block__info">
-									    <span class="overhead">Birthday</span>
-							            <span class="text-overflow" title="March 12, 1995">March 12, 1995</span>
-								    </div>
-							    </li>
-								<!-- Location -->
-						        <li class="details-info__item">
-								    <span class="box box--s2 icon-box"><i class="font-icon icon-location"></i></span>
+                                <!-- Location -->
+						 	    <li class="details-info__item">
+								    <span class="box box--s2 icon-box"><i class="font-icon fa-solid fa-location-dot"></i></span>
 								    <div class="contacts-block__info">
 									    <span class="overhead">Location</span>
-									    <span class="text-overflow" title="San-Francisco, USA">San-Francisco, USA</span>
-								    </div>
+							            <a class="text-overflow" title="Sydney, Australia" href="https://maps.app.goo.gl/2tGCYm4b4GxyCUi77">Sydney, Australia</a>
+								    </div>	
+							    </li>
+								<!-- Github -->
+						        <li class="details-info__item">
+								    <span class="box box--s2 icon-box"><i class="font-icon fa-brands fa-github"></i></span>
+								    <div class="contacts-block__info">
+									    <span class="overhead">Github</span>
+							            <a class="text-overflow" href="https://github.com/PYastreboff/" title="Github: PYastreboff">PYastreboff</a>
+								    </div>	
 							    </li>
 					        </ul>
 						    <div class="separation d-xl-none"></div>
 
 						    <!-- Social -->
 						    <div class="social">
-							    <a class="social__link" href="https://www.facebook.com/"><i class="feathericon-facebook"></i></a>
-							    <a class="social__link" href="https://www.behance.com/"><i class="feathericon-twitter"></i></a>
-						  	    <a class="social__link" href="https://www.linkedin.com/"><i class="feathericon-instagram"></i></a>
+							    <a class="social__link" href="https://x.com/PeterY03800587"><i class="fa-brands fa-x-twitter"></i></a>
+							    <a class="social__link" href="https://www.linkedin.com/in/peter-yastreboff-6a9664313/"><i class="fa-brands fa-linkedin"></i></a>
+						  	    <a class="social__link" href="https://www.hackerrank.com/profile/Peter_Y"><i class="fa-brands fa-hackerrank"></i></a>
 						    </div>
 						</div>	
 					</div>	
@@ -118,8 +90,6 @@
                                 <li class="nav__item"><a href="index.html">About</a></li>
 								<li class="nav__item"><a href="resume.html">Resume</a></li>
                                 <li class="nav__item"><a class="active" href="portfolio.html">Portfolio</a></li>
-                                <li class="nav__item"><a href="blog.html">Blog</a></li>
-                                <li class="nav__item"><a href="contact.html">Contact</a></li>
                             </ul>
 						</div>
 						
@@ -134,9 +104,9 @@
 			                <ul class="filter">
 			                    <li class="filter__item">Category</li>
 				                <li class="filter__item active" data-filter="*"><a class="filter__link active" href="#filter">All</a></li>
-				                <li class="filter__item" data-filter=".category-design"><a class="filter__link" href="#filter">Web Design</a></li>
-				                <li class="filter__item" data-filter=".category-applications"><a class="filter__link" href="#filter">Applications</a></li>
-								<li class="filter__item" data-filter=".category-web-development"><a class="filter__link" href="#filter">Web Development</a></li>
+				                <li class="filter__item" data-filter=".category-soft"><a class="filter__link" href="#filter">Software Design</a></li>
+				                <li class="filter__item" data-filter=".category-web"><a class="filter__link" href="#filter">Web Design</a></li>
+								<li class="filter__item" data-filter=".category-graphics"><a class="filter__link" href="#filter">Graphic Design</a></li>
 			                </ul>
 			                <input type="hidden" name="changemetoo"/>
 		                </div>
@@ -145,118 +115,66 @@
 						<div class="gallery-grid js-masonry js-filter-container">
 							<div class="gutter-sizer"></div>
 							<!-- Item 1 -->
-							<div class="gallery-grid__item category-design">
-								<a href="single-project.html">
+							<div class="gallery-grid__item category-web">
+								<a href="project-kk.html">
 								    <div class="gallery-grid__image-wrap">
-                                        <img class="gallery-grid__image cover lazyload" src="../assets/images/projects/project-1.jpg" alt="" />
+                                        <img class="gallery-grid__image cover lazyload" src="./img/kc.png" alt="" />
 								    </div>
                                     <div class="gallery-grid__caption">
-									    <h3 class="title gallery-grid__title">Moonboard</h3>
+									    <h3 class="title gallery-grid__title">Kotties Cleaning</h3>
 									    <span class="gallery-grid__category">Web Design</span>
 									</div>
 								</a>
 							</div>
                             
 							<!-- Item 2 -->
-							<div class="gallery-grid__item category-applications">
-								<a href="single-project.html">
+							<div class="gallery-grid__item category-web">
+								<a href="project-mjo.html">
 								    <div class="gallery-grid__image-wrap">
-                                        <img class="gallery-grid__image cover lazyload" src="../assets/images/projects/project-2.jpg" alt="" />
+                                        <img class="gallery-grid__image cover lazyload" src="./img/mjo.png" alt="" />
 								    </div>
                                     <div class="gallery-grid__caption">
-									    <h3 class="title gallery-grid__title">Gourmania</h3>
-									    <span class="gallery-grid__category">Applications</span>
-									</div>
-								</a>
-							</div>
-                            
-							<!-- Item 3 -->
-							<div class="gallery-grid__item category-web-development">
-								<a href="single-project.html">
-								    <div class="gallery-grid__image-wrap">
-                                        <img class="gallery-grid__image cover lazyload" src="../assets/images/projects/project-3.jpg" alt="" />
-								    </div>
-                                    <div class="gallery-grid__caption">
-									    <h3 class="title gallery-grid__title">Rocket</h3>
-									    <span class="gallery-grid__category">Web Development</span>
+									    <h3 class="title gallery-grid__title">Matt Jones Ortho</h3>
+									    <span class="gallery-grid__category">Web Design</span>
 									</div>
 								</a>
 							</div>
 
+
 							<!-- Item 4 -->
-							<div class="gallery-grid__item category-applications">
-								<a href="single-project.html">
+							<div class="gallery-grid__item category-soft">
+								<a href="project-tga.html">
 								    <div class="gallery-grid__image-wrap">
-                                        <img class="gallery-grid__image cover lazyload" src="../assets/images/projects/project-4.jpg" alt="" />
+                                        <img class="gallery-grid__image cover lazyload" src="./img/app.png" alt="" />
 								    </div>
                                     <div class="gallery-grid__caption">
-									    <h3 class="title gallery-grid__title">Micro</h3>
-									    <span class="gallery-grid__category">Applications</span>
+									    <h3 class="title gallery-grid__title">Trains Game App</h3>
+									    <span class="gallery-grid__category">Software Design</span>
 									</div>
 								</a>
 							</div>
 
 							<!-- Item 5 -->
 							<div class="gallery-grid__item category-web-development">
-								<a href="single-project.html">
+								<a href="project-spo.html">
 								    <div class="gallery-grid__image-wrap">
-                                        <img class="gallery-grid__image cover lazyload" src="../assets/images/projects/project-5.jpg" alt="" />
+                                        <img class="gallery-grid__image cover lazyload" src="./img/web-crop.png" alt="" />
 								    </div>
                                     <div class="gallery-grid__caption">
-									    <h3 class="title gallery-grid__title">Elemento</h3>
+									    <h3 class="title gallery-grid__title">SPX Physics Online</h3>
 									    <span class="gallery-grid__category">Web Development</span>
 									</div>
 								</a>
 							</div>
-
-							<!-- Item 6 -->
-							<div class="gallery-grid__item category-design">
-								<a href="single-project.html">
-								    <div class="gallery-grid__image-wrap">
-                                        <img class="gallery-grid__image cover lazyload" src="../assets/images/projects/project-6.jpg" alt="" />
-								    </div>
-                                    <div class="gallery-grid__caption">
-									    <h3 class="title gallery-grid__title">Alpha</h3>
-									    <span class="gallery-grid__category">Web Design</span>
-									</div>
-								</a>
-							</div>
-
-							<!-- Item 7 -->
-							<div class="gallery-grid__item category-web-development">
-								<a href="single-project.html">
-								    <div class="gallery-grid__image-wrap">
-                                        <img class="gallery-grid__image cover lazyload" src="../assets/images/projects/project-7.jpg" alt="" />
-								    </div>
-                                    <div class="gallery-grid__caption">
-									    <h3 class="title gallery-grid__title">Voltum</h3>
-									    <span class="gallery-grid__category">Web Development</span>
-									</div>
-								</a>
-							</div>
-
 							<!-- Item 8 -->
-							<div class="gallery-grid__item category-applications">
-								<a href="single-project.html">
+							<div class="gallery-grid__item category-graphics">
+								<a href="project-bd.html">
 								    <div class="gallery-grid__image-wrap">
-                                        <img class="gallery-grid__image cover lazyload" src="../assets/images/projects/project-8.jpg" alt="" />
+                                        <img class="gallery-grid__image cover lazyload" src="./img/microscope_questions.png" alt="" />
 								    </div>
                                     <div class="gallery-grid__caption">
-									    <h3 class="title gallery-grid__title">Orange</h3>
-									    <span class="gallery-grid__category">Applications</span>
-									</div>
-								</a>
-							</div>
-
-							<!-- Item 9 -->
-							<div class="gallery-grid__item category-design">
-								<a href="single-project.html">
-								    <div class="gallery-grid__image-wrap">
-                                        <img class="gallery-grid__image cover lazyload" src="../assets/images/projects/project-9.jpg" alt="" />
-								    </div>
-                                    <div class="gallery-grid__caption">
-									    <h3 class="title gallery-grid__title">Omega</h3>
-									    <span class="gallery-grid__category">Web Design</span>
+									    <h3 class="title gallery-grid__title">Biology Diagrams</h3>
+									    <span class="gallery-grid__category">Graphic Design</span>
 									</div>
 								</a>
 							</div>
@@ -270,9 +188,9 @@
     <div class="back-to-top"></div>
 
 	<!-- JavaScripts -->
-	<script src="../assets/js/jquery-3.4.1.min.js"></script>
-	<script src="../assets/js/plugins.min.js"></script>
-    <script src="../assets/js/common.js"></script>
+	<script src="./js/jquery-3.4.1.min.js"></script>
+	<script src="./js/plugins.min.js"></script>
+    <script src="./js/common.js"></script>
 
 </body>
 </html>

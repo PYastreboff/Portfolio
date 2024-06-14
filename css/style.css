@@ -30,13 +30,13 @@
  - Other
  
 ------------------------------------------------ */
-@import url("vendors/swiper.min.css");
-@import url("vendors/simplebar.min.css");
-@import url("vendors/magnific-popup.css");
-@import url("vendors/photoswipe.css");
-@import url("vendors/default-skin.css");
-@import url("../icons/style-custome-icons.css");
-@import url("../icons/feather.css");
+@import url("./css/swiper.min.css");
+@import url("./css/simplebar.min.css");
+@import url("./css/magnific-popup.css");
+@import url("./css/photoswipe.css");
+@import url("./css/default-skin.css");
+@import url("./css/style-custome-icons.css");
+@import url("./css/feather.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 :root {
   --font-family: 'Poppins', sans-serif;
@@ -49,12 +49,22 @@
   --color-surface-1: #1e1e1f;
   --color-surface-2: #2a2a2b;
   --color-surface-3: #202021;
-  --color-accent: #FFDB6E;
+
+  /*--color-accent: #FFDB6E;*/
+  --color-accent: #4b67bb;
+
   --color-error: #B84C4C;
+  /*
   --color-gradient: linear-gradient(137.84deg, #FFDB6E 26.31%, #FFBC5E 93.75%);
   --color-gradient-soft: linear-gradient(135deg, rgba(255, 218, 109, 0.0375) 0%, rgba(255, 189, 94, 0) 100%), #1E1E1F;
   --color-gradient-text: linear-gradient(90deg, #FFDB6E, #FFBC5E);
   --color-gradient-border: linear-gradient(155deg, #FFDA6D 0%, rgba(255, 191, 96, 0) 50%);
+  */
+  --color-gradient: linear-gradient(137.84deg, #00a2e2 30.31%, #2e40b8 93.75%);
+  --color-gradient-soft: linear-gradient(135deg, rgba(255, 218, 109, 0.0375) 0%, rgba(255, 189, 94, 0) 100%), #1E1E1F;
+  --color-gradient-text: linear-gradient(90deg, #00a2e2, #2e40b8);
+  --color-gradient-border: linear-gradient(155deg, #1b4fd1 0%, rgba(255, 191, 96, 0) 50%);
+
   --color-gradient-border-gray: linear-gradient(135deg, #404040 0%, rgba(64, 64, 64, 0) 48.44%);
   --color-gradient-gray: linear-gradient(137.84deg, #3F3F40 2.69%, #303030 93.75%);
   --color-gradient-icon: linear-gradient(135deg, rgba(255, 218, 109, 0.25) 0%, rgba(255, 189, 94, 0) 59.86%), #202021;
@@ -1540,7 +1550,7 @@ button:focus {
   background: var(--color-surface-2) !important;
   border-radius: var(--radius-8);
   color: var(--color-heading) !important;
-  font-family: 'feather';
+  font-family: 'FontAwesome';
   height: 2rem;
   right: 0.9375rem;
   top: 0.9375rem;
@@ -1736,6 +1746,10 @@ button:focus {
   margin-right: 1rem;
   height: 2.5rem;
   width: 2.5rem;
+  font-size: 2rem;
+  background: var(--color-gradient-text);
+  background-clip: text;
+  color: transparent;
 }
 
 @media only screen and (max-width: 580px) {
@@ -1933,12 +1947,12 @@ button:focus {
 }
 
 .gallery-grid__image-wrap::after {
-  content: '\e95f';
+  content: '\f06e';
   background: rgba(32, 32, 33, 0.8);
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
   border-radius: var(--radius-12);
-  font-family: 'feather' !important;
+  font-family: 'FontAwesome' !important;
   font-size: 1.125rem;
   color: var(--color-accent) !important;
   display: -webkit-box;
@@ -2843,7 +2857,7 @@ button:focus {
   position: fixed;
   top: 0;
   width: 0;
-  z-index: 3;
+  z-index: 10;
 }
 
 .social-auth {
@@ -3361,3 +3375,7 @@ button:focus {
   height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
+
+a i:hover {
+  cursor: pointer;
+}

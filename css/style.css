@@ -3417,14 +3417,16 @@ a i:hover {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  display: block
+  display: block;
+  top: calc(50vh - (350px));
+  left: calc(50vw - 300px);
 }
 
 @media only screen and (max-width: 768px) {
   .sun {
     height: 100vh;
     width: 100vw;
-    top: calc(50vw - (350px / 2));
+    top: calc(50vh - (350px));
     left: calc(50vw - 300px);
     position:fixed;
   }

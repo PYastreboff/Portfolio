@@ -2126,12 +2126,12 @@ button:focus {
     right: 0.125rem;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    font-family: 'icomoon';
-    content: '\e90e';
+    font-family: 'FontAwesome';
+    content: '\f078';
     z-index: 10;
   }
   .select.is-open .placeholder:after {
-    content: '\e90f';
+    content: '\f0c9';
   }
   .select.is-open ul {
     display: block;

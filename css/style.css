@@ -1077,7 +1077,8 @@ button:focus {
 }
 
 .box-outer {
-  background-color: var(--color-surface-1);
+  background-color: rgba(30, 30, 30, 0.5);
+  backdrop-filter: blur(50px);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-20);
   -webkit-box-shadow: var(--box-shadow-24);
@@ -3405,4 +3406,16 @@ button:focus {
 
 a i:hover {
   cursor: pointer;
+}
+
+.sun {
+  width: 400px;
+  padding: 300px;
+  height: 400px;
+  background: var(--color-accent);
+  background: radial-gradient(circle, #152651 0%,  #111 70%);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  display: block
 }

@@ -729,3 +729,11 @@ $(document).ready(function() {
       // execute above function
       initPhotoSwipeFromDOM(".project-gallery");
 });
+
+
+$(document).mousemove(function(e){
+  $(".sun").css({
+    left:e.pageX - 300, 
+    top:e.pageY - 300
+  });
+});

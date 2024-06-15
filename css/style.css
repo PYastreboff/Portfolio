@@ -3419,3 +3419,13 @@ a i:hover {
   position: absolute;
   display: block
 }
+
+@media only screen and (max-width: 768px) {
+  .sun {
+    height: 100vh;
+    width: 100vw;
+    top: calc(50vw - (350px / 2));
+    left: calc(50vw - 300px);
+    position:fixed;
+  }
+}

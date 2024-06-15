@@ -731,9 +731,12 @@ $(document).ready(function() {
 });
 
 
-$(document).mousemove(function(e){
-  $(".sun").css({
-    left:e.pageX - 300, 
-    top:e.pageY - 300
-  });
+$(document).mousemove(function(e) {
+  var screenWidth = $(window).width();
+  if (screenWidth > 700) {
+    $(".sun").css({
+      left: e.pageX - 300, 
+      top: e.pageY - 300
+    });
+  }
 });

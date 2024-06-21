@@ -734,7 +734,17 @@ $(document).ready(function() {
 $(document).mousemove(function(e) {
   var screenWidth = $(window).width();
   if (screenWidth > 700) {
-    $(".sun").css({
+    var $sun = $(".sun");
+
+    // Check if the element is not yet positioned (i.e., first move)
+    if (!$sun.data("positioned")) {
+      $sun.css({
+        left: e.pageX - 300, 
+        top: e.pageY - 300
+      }).data("positioned", true); // Mark it as positioned
+    }
+
+    $sun.css({
       left: e.pageX - 300, 
       top: e.pageY - 300
     });
